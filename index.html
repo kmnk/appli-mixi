@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>Hello mixi Appli World !!</title>
+</head>
+<body>
+Hello mixi Appli World !!
+
+</body>
+<script type="text/javascript" charset="UTF-8" src="http://static.mixi.jp/js/application/connect.js"></script>
+<script type="text/javascript" charset="UTF-8" src="./js/lib/namespace.js"></script>
+<script type="text/javascript" charset="UTF-8" src="./js/lib/brook.js"></script>
+<script type="text/javascript" charset="UTF-8" src="./js/lib/underscore.js"></script>
+<script src="http://www.google.com/jsapi"></script>
+<script>google.load('jquery', '1');</script>
+<script type="text/javascript" charset="UTF-8" src="./js/main.js"></script>
+<script type="text/javascript" charset="UTF-8" src="./js/authorize.js"></script>
+<script>
+Namespace('init')
+.use('main run')
+.apply(function(ns){
+    mixi.init({
+        appId    : 'mixiapp-web_36647',
+        relayUrl : 'http://www28199u.sakura.ne.jp/mixiAppliSample/relay.html'
+    });
+    ns.run()
+});
+</script>
+</html>
+<!-- vim:expandtab softtabstop=2 shiftwidth=2 -->
